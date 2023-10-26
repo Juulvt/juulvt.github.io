@@ -8,7 +8,7 @@ module.exports = {
   content: {
     relative: true,
     transform: (content) => content.replace(/taos:/g, ''),
-    files: ['./*.{html,js}'],
+    files: ['./*.{html,js}', './*/*.{html,js}'],
   },
   theme: {
     extend: {
