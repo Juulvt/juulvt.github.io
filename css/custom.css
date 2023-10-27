@@ -616,6 +616,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-bottom: 1rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -628,16 +632,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-top: 1rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-auto {
+  margin-top: auto;
 }
 
 .flex {
@@ -660,44 +664,30 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   height: 3.5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
 .h-44 {
   height: 11rem;
 }
 
-.max-h-\[5rem\] {
-  max-height: 5rem;
+.h-8 {
+  height: 2rem;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.max-h-\[28rem\] {
+  max-height: 28rem;
 }
 
 .max-h-\[3rem\] {
   max-height: 3rem;
 }
 
-.max-h-\[40rem\] {
-  max-height: 40rem;
-}
-
-.max-h-\[30rem\] {
-  max-height: 30rem;
-}
-
-.max-h-\[20rem\] {
-  max-height: 20rem;
-}
-
-.max-h-\[28rem\] {
-  max-height: 28rem;
+.max-h-fit {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 .min-h-screen {
@@ -775,6 +765,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -828,17 +822,13 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
        column-gap: 3rem;
 }
 
-.gap-y-4 {
-  row-gap: 1rem;
+.gap-x-24 {
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
 }
 
 .gap-y-8 {
   row-gap: 2rem;
-}
-
-.gap-x-24 {
-  -moz-column-gap: 6rem;
-       column-gap: 6rem;
 }
 
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -851,8 +841,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   border-color: rgb(147 197 253 / 0.5);
 }
 
+.place-self-end {
+  place-self: end;
+}
+
 .self-end {
   align-self: flex-end;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .overflow-hidden {
@@ -861,14 +859,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .scroll-smooth {
   scroll-behavior: smooth;
-}
-
-.whitespace-nowrap {
-  white-space: nowrap;
-}
-
-.whitespace-pre {
-  white-space: pre;
 }
 
 .whitespace-pre-line {
@@ -902,6 +892,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .border-secondarybutton\/10 {
   border-color: rgb(43 47 64 / 0.1);
+}
+
+.bg-blue-300\/50 {
+  background-color: rgb(147 197 253 / 0.5);
 }
 
 .bg-blue-300\/60 {
@@ -950,21 +944,21 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   background-color: rgb(43 47 64 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-yellow-300\/60 {
   background-color: rgb(253 224 71 / 0.6);
 }
 
-.bg-yellow-300\/10 {
-  background-color: rgb(253 224 71 / 0.1);
+.bg-cover {
+  background-size: cover;
 }
 
-.bg-blue-300\/50 {
-  background-color: rgb(147 197 253 / 0.5);
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.bg-center {
+  background-position: center;
 }
 
 .p-4 {
@@ -1053,12 +1047,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   font-weight: 300;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1218,8 +1212,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     margin-bottom: 6rem;
   }
 
-  .md\:h-56 {
-    height: 14rem;
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:gap-24 {
